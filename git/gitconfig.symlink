@@ -13,6 +13,7 @@
 	ci   = commit
 	cim  = commit -m
 	cima = commit -am
+	cis  = commit --amend -S --no-edit
 	co   = checkout
 	cp   = cherry-pick
 	d    = diff
@@ -24,6 +25,7 @@
 	p    = push
 	pl   = pull
 	rb   = rebase
+	rbc  = rebase --continue
 	rs   = reset
 	rsh  = reset --hard
 	sh   = show
