@@ -9,11 +9,11 @@
 [alias]
 	a    = add
 	amd  = commit --amend --no-edit
+	ams  = commit --amend -S --no-edit
 	br   = branch -v
 	ci   = commit
 	cim  = commit -m
 	cima = commit -am
-	cis  = commit --amend -S --no-edit
 	co   = checkout
 	cp   = cherry-pick
 	d    = diff
