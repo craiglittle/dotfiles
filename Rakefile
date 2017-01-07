@@ -39,8 +39,11 @@ task :install do
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
 
-  `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle` unless Dir.exists?("#{ENV['HOME']}/.vim/bundle/vundle")
-  `vim +BundleInstall! +qall < \`tty\` > \`tty\``
+  unless Dir.exists?("#{ENV['HOME']}/.vim/bundle/vundle")
+    `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+    `vim +BundleInstall! +qall < \`tty\` > \`tty\``
+  end
 end
 
 task :uninstall do
