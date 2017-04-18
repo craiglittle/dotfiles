@@ -41,6 +41,8 @@
 	status = auto
 	branch = auto
 	ui     = true
+[commit]
+	gpgsign = true
 [push]
 	default = current
 [branch]
