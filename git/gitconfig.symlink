@@ -34,6 +34,8 @@
   rsha = !git fetch && git co master && git rsh origin/master && git co staging && git rsh origin/staging && git co production && git rsh origin/production && git co master
 	sh   = show
 	st   = status -sb
+[commit]
+	verbose = true
 [core]
 	editor   = vim
 	autocrlf = input
