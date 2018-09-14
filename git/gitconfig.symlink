@@ -27,11 +27,13 @@
 	pl   = pull
 	rb   = rebase
 	rbc  = rebase --continue
+	rbi  = rebase -i origin/master
+	rbl  = !git fetch && git rb origin/master
 	rs   = reset
 	rsh  = reset --hard
+  rsha = !git fetch && git co master && git rsh origin/master && git co staging && git rsh origin/staging && git co production && git rsh origin/production && git co master
 	sh   = show
 	st   = status -sb
-	rbl  = !git fetch && git rb origin/master
 [core]
 	editor   = vim
 	autocrlf = input
