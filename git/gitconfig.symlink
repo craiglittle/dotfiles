@@ -5,7 +5,6 @@
 [user]
 	name  = Craig Little
 	email = craiglttl@gmail.com
-	signingkey = DD278018
 [alias]
 	a    = add
 	amd  = commit --amend --no-edit
