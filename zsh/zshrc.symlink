@@ -14,7 +14,7 @@ PATH="$PATH:$HOME/bin"
 export GPG_TTY=$(tty)
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby ruby-2.4
+chruby ruby-2.7
 
 autoload -Uz vcs_info
 
